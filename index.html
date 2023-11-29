@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <header> SPLI <br>TTER</header>
+
+        <div class="main-part">
+
+            <div class="left-side">
+                <form action="">
+                    <div class="checkbox">
+                        <label for="bill">Bill</label><br>
+                        <input type="number" id="bill" name="bill">
+                    </div>
+                    <div>
+                        <label for="tips">Select Tip %</label><br>
+                        <input type="radio" id="five-percent" name="tips" value="5%">
+                        <label class="check" for="five-percent">
+                            <div class="num">5%</div>
+                        </label>
+
+                        <input type="radio" id="ten-percent" name="tips" value="5%">
+                        <label class="check" for="ten-percent">
+                            <div class="num">10%</div>
+                        </label>
+
+                        <input type="radio" id="fifteen-percent" name="tips">
+                        <label class="check" for="fifteen-percent">
+                            <div class="num">15%</div>
+                        </label>
+                        <input type="radio" id="twenty-five" name="tips">
+                        <label class="check" for="twenty-five">
+                            <div class="num">25%</div>
+                        </label>
+
+                        <input type="radio" id="fifty" name="tips">
+                        <label class="check" for="fifty">
+                            <div class="num">50%</div>
+                        </label>
+
+                        <input class="check" type="text" name="tips" placeholder="Custom"
+                            style="color: hsl(186, 14%, 43%);background-color:hsl(189, 41%, 97%)">
+                    </div>
+                    <div class="people">
+                        <label for="people">Number of People</label>be
+
+                        <input type="number" id="amount" name="people">
+                    </div>
+
+                </form>
+            </div>
+            <div class="right-side">
+                <div class="top-part">
+                    <div id="right">
+                        <h4>Tip Amount</h4>
+                        <p>/ person</p>
+                    </div>
+                    <div id="right">
+
+                        <h1>$0.00</h1>
+                    </div>
+                    <div id="right">
+
+                        <h4>Total </h4>
+                        <p>/ person</p>
+                    </div>
+                    <div id="right">
+
+                        <h1>$0.00</h1>
+                    </div>
+                </div>
+                <div class="bottom-part">
+                    <input type="reset" id="reset">
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </body>
+
+</html>
