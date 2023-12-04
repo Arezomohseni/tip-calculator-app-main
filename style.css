@@ -5,12 +5,22 @@
 
 body {
   height: 100vh;
+  line-height: 1.5;
   font-family: "Space Mono", monospace;
   background-color: hsl(185, 41%, 84%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+header {
+  margin-bottom: 60px;
+}
+header p {
+  color: hsl(183, 100%, 15%);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5em;
 }
 
 .main-part {
@@ -27,20 +37,13 @@ body {
   width: 45%;
   display: flex;
   justify-content: center;
-  /* margin-left: 10px; */
 }
 
-#header {
-  color: hsl(183, 100%, 15%);
-  margin-bottom: 50px;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0.5em;
-}
-#labell {
+.labell {
   color: hsl(186, 14%, 43%);
   font-size: 16px;
   font-weight: 900;
+  display: block;
 }
 
 input[type="number"] {
@@ -59,6 +62,11 @@ input[type="number"] {
   font-size: 18px;
   font-weight: 700;
 }
+#bill:hover {
+  cursor: pointer;
+  border: 2px solid hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
 .check {
   background-color: hsl(183, 100%, 15%);
   display: inline-block;
@@ -74,30 +82,38 @@ input[type="number"] {
   font-size: 24px;
   font-weight: 700;
 }
-
-.right-side {
-  width: 45%;
-  background-color: hsl(183, 100%, 15%);
-  border-radius: 5px;
+input[type="radio"] {
+  display: none;
+}
+#custom:hover {
+  cursor: pointer;
+  border: 2px solid hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+}
+.people {
+  margin-top: 30px;
 }
 #amount {
   background-image: url("images/icon-person.svg");
   background-repeat: no-repeat;
 }
-.people {
-  margin-top: 30px;
-  /* margin-bottom: 10px; */
+#amount:hover {
+  cursor: pointer;
+  border: 2px solid hsl(17, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
 
-input[type="radio"] {
-  display: none;
-  /* font-size: 24px; */
+input[type="radio"]:checked + label {
+  background-color: hsl(172, 69%, 70%);
+  cursor: pointer;
+  color: hsl(183, 100%, 15%);
 }
 
-/* input[type="radio"]:checked + label {
-  background-color: red;
-} */
 .right-side {
+  width: 45%;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -111,22 +127,7 @@ input[type="radio"] {
   text-align: center;
   padding-top: 20px;
 }
-#right {
-  width: 50%;
-  padding: 20px 0;
-}
-input[type="reset"] {
-  color: hsl(183, 100%, 15%);
-  font-size: 16px;
-  font-weight: 700;
-  border-radius: 5px;
-  padding: 10px;
-  border: 0;
-  background-color: hsla(185, 61%, 27%, 0.858);
-  width: 280px;
-  margin-bottom: 40px;
-}
-h1 {
+h2 {
   color: hsl(172, 67%, 45%);
   font-size: 36px;
   font-weight: 700;
@@ -143,4 +144,23 @@ h4,
 p {
   text-align: left;
   padding-left: 30px;
+}
+.right {
+  width: 50%;
+  padding: 20px 0;
+}
+.reset {
+  color: hsl(183, 100%, 15%);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 10px;
+  border: 0;
+  background-color: hsla(185, 61%, 27%, 0.858);
+  width: 280px;
+  margin-bottom: 40px;
+}
+.reset:hover {
+  cursor: pointer;
+  background-color: hsl(172, 58%, 73%);
 }

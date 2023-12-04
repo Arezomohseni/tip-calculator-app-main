@@ -14,18 +14,21 @@
     </head>
 
     <body>
-        <header id="header"> SPLI <br>TTER</header>
+        <header>
+            <p>SPLI </p>
+            <p>TTER</p>
+        </header>
 
         <div class="main-part">
 
             <div class="left-side">
                 <form action="">
                     <div class="checkbox">
-                        <label id="labell" for="bill">Bill</label><br>
+                        <label class="labell" for="bill">Bill</label>
                         <input type="number" id="bill" value="0" name="bill">
                     </div>
                     <div>
-                        <label id="labell" for="tips">Select Tip %</label><br>
+                        <label class="labell" for="tips">Select Tip %</label>
                         <input type="radio" id="five-percent" name="tips" value="5%">
                         <label class="check" for="five-percent">
                             <div class="num">5%</div>
@@ -50,11 +53,11 @@
                             <div class="num">50%</div>
                         </label>
 
-                        <input class="check" type="text" name="tips" placeholder="Custom"
+                        <input class="check" id="custom" type="text" name="tips" placeholder="Custom"
                             style="font-size: 20px; color:hsl(183, 100%, 15%) ;height: 38.800px; background-color: hsl(189, 41%, 97%);">
                     </div>
                     <div class="people">
-                        <label id="labell" for="people">Number of People</label><br>
+                        <label class="labell" name="people-amount" for="people">Number of People</label>
 
                         <input type="number" id="amount" value="0" name="people">
                     </div>
@@ -63,26 +66,26 @@
             </div>
             <div class="right-side">
                 <div class="top-part">
-                    <div id="right">
+                    <div class="right">
                         <h4>Tip Amount</h4>
                         <p>/ person</p>
                     </div>
-                    <div id="right">
+                    <div class="right">
 
-                        <h1>$0.00</h1>
+                        <h2>$0.00</h2>
                     </div>
-                    <div id="right">
+                    <div class="right">
 
                         <h4>Total </h4>
                         <p>/ person</p>
                     </div>
-                    <div id="right">
+                    <div class="right">
 
-                        <h1>$0.00</h1>
+                        <h2>$0.00</h2>
                     </div>
                 </div>
                 <div class="bottom-part">
-                    <input type="reset" value=RESET "reset">
+                    <button class="reset" type="reset">RESET</button>
                 </div>
 
 
@@ -95,5 +98,6 @@
 
 
     </body>
+    <script src="./script.js"></script>
 
 </html>
