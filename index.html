@@ -14,18 +14,18 @@
     </head>
 
     <body>
-        <header> SPLI <br>TTER</header>
+        <header id="header"> SPLI <br>TTER</header>
 
         <div class="main-part">
 
             <div class="left-side">
                 <form action="">
                     <div class="checkbox">
-                        <label for="bill">Bill</label><br>
-                        <input type="number" id="bill" name="bill">
+                        <label id="labell" for="bill">Bill</label><br>
+                        <input type="number" id="bill" value="0" name="bill">
                     </div>
                     <div>
-                        <label for="tips">Select Tip %</label><br>
+                        <label id="labell" for="tips">Select Tip %</label><br>
                         <input type="radio" id="five-percent" name="tips" value="5%">
                         <label class="check" for="five-percent">
                             <div class="num">5%</div>
@@ -51,12 +51,12 @@
                         </label>
 
                         <input class="check" type="text" name="tips" placeholder="Custom"
-                            style="color: hsl(186, 14%, 43%);background-color:hsl(189, 41%, 97%)">
+                            style="font-size: 20px; color:hsl(183, 100%, 15%) ;height: 38.800px; background-color: hsl(189, 41%, 97%);">
                     </div>
                     <div class="people">
-                        <label for="people">Number of People</label>be
+                        <label id="labell" for="people">Number of People</label><br>
 
-                        <input type="number" id="amount" name="people">
+                        <input type="number" id="amount" value="0" name="people">
                     </div>
 
                 </form>
@@ -82,7 +82,7 @@
                     </div>
                 </div>
                 <div class="bottom-part">
-                    <input type="reset" id="reset">
+                    <input type="reset" value=RESET "reset">
                 </div>
 
 

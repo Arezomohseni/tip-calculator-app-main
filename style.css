@@ -17,22 +17,48 @@ body {
   width: 800px;
   background-color: hsl(0, 0%, 100%);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   border-radius: 20px;
   box-sizing: border-box;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .left-side {
   width: 45%;
-  /* height: 200px; */
+  display: flex;
+  justify-content: center;
+  /* margin-left: 10px; */
 }
 
-#bill {
+#header {
+  color: hsl(183, 100%, 15%);
+  margin-bottom: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+}
+#labell {
+  color: hsl(186, 14%, 43%);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+input[type="number"] {
   background-image: url("images/icon-dollar.svg");
   background-repeat: no-repeat;
+  background-color: hsl(189, 41%, 97%);
+  background-position: 2vh;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  color: hsl(184, 14%, 56%);
+  width: 96%;
+  padding: 10px 0;
+  border: 0;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 700;
 }
-
 .check {
   background-color: hsl(183, 100%, 15%);
   display: inline-block;
@@ -40,13 +66,13 @@ body {
   align-items: center;
   text-align: center;
   border-radius: 5px;
-  color: hsl(0, 0%, 100%);
-  margin: 10px;
-  padding: 0;
+  color: hsl(185, 41%, 84%);
+  margin: 10px 0;
+  padding: 2px 0;
   border: 0;
-  width: 25%;
-  height: 30px;
+  width: 30%;
   font-size: 24px;
+  font-weight: 700;
 }
 
 .right-side {
@@ -58,39 +84,63 @@ body {
   background-image: url("images/icon-person.svg");
   background-repeat: no-repeat;
 }
+.people {
+  margin-top: 30px;
+  /* margin-bottom: 10px; */
+}
 
 input[type="radio"] {
   display: none;
   /* font-size: 24px; */
 }
 
-input[type="radio"]:checked + label {
+/* input[type="radio"]:checked + label {
   background-color: red;
-}
+} */
 .right-side {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  border-radius: 10px;
 }
 .top-part {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  padding-top: 20px;
 }
 #right {
   width: 50%;
   padding: 20px 0;
 }
-#reset {
+input[type="reset"] {
   color: hsl(183, 100%, 15%);
-  font-size: 24px;
-  margin-top: 120px;
-  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   border: 0;
-  background-color: hsl(185, 41%, 84%);
-  width: 300px;
+  background-color: hsla(185, 61%, 27%, 0.858);
+  width: 280px;
+  margin-bottom: 40px;
+}
+h1 {
+  color: hsl(172, 67%, 45%);
+  font-size: 36px;
+  font-weight: 700;
+}
+h4 {
+  color: hsl(185, 41%, 84%);
+}
+p {
+  color: hsl(184, 14%, 56%);
+  font-size: 12px;
+  font-weight: 700;
+}
+h4,
+p {
+  text-align: left;
+  padding-left: 30px;
 }
